@@ -13,11 +13,11 @@ namespace CompositeExample {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
-    internal sealed partial class appSettings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class appsettings : global::System.Configuration.ApplicationSettingsBase {
         
-        private static appSettings defaultInstance = ((appSettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new appSettings())));
+        private static appsettings defaultInstance = ((appsettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new appsettings())));
         
-        public static appSettings Default {
+        public static appsettings Default {
             get {
                 return defaultInstance;
             }

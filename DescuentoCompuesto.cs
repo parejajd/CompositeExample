@@ -10,9 +10,14 @@ namespace CompositeExample
     public abstract class DescuentoCompuesto : IEstrategiaFijarPreciosVenta
     {
         protected List<IEstrategiaFijarPreciosVenta> Estrategias;
-        public DescuentoCompuesto(params IEstrategiaFijarPreciosVenta[] estrategias)
+        public DescuentoCompuesto()
         {
-            Estrategias = estrategias.ToList();
+            Estrategias = new List<IEstrategiaFijarPreciosVenta>();
+        }
+
+        public void AddEstrategias(params IEstrategiaFijarPreciosVenta[] estrategias)
+        {
+            Estrategias.AddRange(estrategias);
         }
 
         public abstract double GetDescuento(Venta venta);

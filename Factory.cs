@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,14 +27,17 @@ namespace CompositeExample
         {
             try
             {
-                /*
-                    ResourceBundle rb = ResourceBundle.getBundle("patron.singleton.propiedades");
-                    String c = rb.getString(clase);            
-                    obj=Class.forName(c).newInstance();            
-                    gestorDescuentosVigentes=(IEstrategiaFijarPreciosVenta)obj;
-                    return gestorDescuentosVigentes;                 
-                 */
-                return new DescuentoMejorCliente(estrategias);
+                var builder = new ConfigurationBuilder()
+                    .AddJsonFile($"appSettings.json", true, true);
+
+                var config = builder.Build();
+
+                string className = config["Implementation"];
+                Assembly assem = typeof(Factory).Assembly;
+                DescuentoCompuesto p = (DescuentoCompuesto)assem.CreateInstance(className);
+                p.AddEstrategias(estrategias);
+
+                return p;
             }
             catch (Exception)
             {

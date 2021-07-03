@@ -9,8 +9,7 @@ namespace CompositeExample
 {
     public class DescuentoMejorCliente : DescuentoCompuesto
     {
-        public DescuentoMejorCliente(params IEstrategiaFijarPreciosVenta[] estrategias)
-            : base(estrategias)
+        public DescuentoMejorCliente()
         {
 
         }
