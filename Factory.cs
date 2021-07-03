@@ -36,7 +36,7 @@ namespace CompositeExample
                 Assembly assem = typeof(Factory).Assembly;
                 DescuentoCompuesto p = (DescuentoCompuesto)assem.CreateInstance(className);
                 p.AddEstrategias(estrategias);
-
+                Console.WriteLine($"Usando {p.GetType().Name} ");
                 return p;
             }
             catch (Exception)

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompositeExample.Dominio.Venta">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAQAAAAAAAAAAEAAAAAAAAAAQAAgAAAAAAAAAEA=</HashCode>
+      <FileName>Dominio\Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositeExample.VentaEspecializada">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAEA=</HashCode>
+      <FileName>Dominio\VentaEspecializada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositeExample.DescuentoAbsoluto">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAAAAACAAAAAAAAAAAAAAAAAAAICAAAAAEA=</HashCode>
+      <FileName>DescuentoAbsoluto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompositeExample.DescuentoCompuesto">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAACAAAAA=</HashCode>
+      <FileName>DescuentoCompuesto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompositeExample.DescuentoEdadCliente">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAIAAAAAIAAAAAAEA=</HashCode>
+      <FileName>DescuentoEdadCliente.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompositeExample.DescuentoFijo">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAIAIAAAIAAAAAAEA=</HashCode>
+      <FileName>DescuentoFijo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompositeExample.DescuentoMejorCliente">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>DescuentoMejorCliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositeExample.DescuentoMejorEmpresa">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>DescuentoMejorEmpresa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositeExample.Factory">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompositeExample.Program">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CompositeExample.IEstrategiaFijarPreciosVenta">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>IEstrategiaFijarPreciosVenta.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

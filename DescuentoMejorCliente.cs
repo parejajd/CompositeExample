@@ -19,8 +19,10 @@ namespace CompositeExample
             foreach (var estrategia in this.Estrategias)
             {
                 double esteDescuento = estrategia.GetDescuento(venta);
+                Console.WriteLine($"La compra es de {venta.SubTotal} el descuento es de {esteDescuento} para el tipo {estrategia.GetType().Name}");
                 if (esteDescuento > descuento)
                 {
+
                     descuento = esteDescuento;
                 }
             }

@@ -17,7 +17,7 @@ namespace CompositeExample
 
             VentaEspecializada venta = new VentaEspecializada
             {
-                EdadCliente = 18,
+                EdadCliente = 51,
                 SubTotal = 10000
             };
 

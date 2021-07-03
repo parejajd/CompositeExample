@@ -19,7 +19,12 @@ namespace CompositeExample
         public override double CalcularDescuentos(params IEstrategiaFijarPreciosVenta[] descuentos)
         {
             var gestor = this._factory.GestorDescuentosVigentes(descuentos);
-            return gestor.GetDescuento(this);
+
+            var descuento = gestor.GetDescuento(this);
+
+            this.Total = this.SubTotal - descuento;
+
+            return descuento;
         }
 
         public override double GetSubtotal()
@@ -29,7 +34,7 @@ namespace CompositeExample
 
         public override double GetTotal()
         {
-            return this.SubTotal - CalcularDescuentos();
+            return this.Total;
         }
     }
 }
